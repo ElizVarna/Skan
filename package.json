@@ -2,7 +2,6 @@
   "name": "skan",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ElizVarna.github.io/Skan/",
   "dependencies": {
     "@headlessui/react": "^1.7.17",
     "@reduxjs/toolkit": "^1.9.7",
