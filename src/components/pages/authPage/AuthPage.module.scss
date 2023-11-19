@@ -1,0 +1,76 @@
+@import "../../../sizes.scss";
+
+.content {
+    display: flex;
+    @include page-content-settings;
+
+    .flex_container {
+        display: flex;
+       
+    }
+
+    .title {
+        font-family: 'Ferry';
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        margin-right: 50px;
+        display: flex;
+        width: 780px;
+    }
+
+    .picture {
+        position: relative;
+        width: 322px;
+        height: 422px;
+        margin: 10px 0 0 100px;
+
+    }
+
+    @include respond-to(laptop) {
+        .title {
+            font-size: 33px;
+        }
+
+        .picture {
+            margin: 10px 0 70px 3vw;
+            width: $min-content-width * 2;
+        }
+    }
+
+    @include respond-to(tablet) {  
+        .title {
+            width: 450px;
+            font-size: 22px;
+            line-height: 26px;
+            margin-bottom: 126px;
+        }
+
+        .picture {
+            margin: -100px 10vw 80px;
+            justify-self: center;
+        }
+    }
+
+    @include respond-to(mobile) {
+        display: block;
+        .title {
+            width: 350px;
+        }
+            
+        .picture {
+            margin: -100px 0 80px -20px;
+            min-width: $min-content-width;
+        }
+    }
+
+    @include respond-to(mini-mobile) {
+        display: block;
+        .flex_container {
+            .title {
+                text-align: center;
+                margin: 0 auto 126px;
+            }
+        }
+    }
+}
